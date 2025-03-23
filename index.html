@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============================================
+         Meta Information
+    ============================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Title -->
     <title>Conversions</title>
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
+  
   <body>
-    <!-- User Input -->
+    <!-- ============================================
+         User Input Section
+    ============================================= -->
     <div class="input-section">
       <label for="stud">STUD</label>
       <div>
@@ -16,11 +26,15 @@
           id="stud"
           name="stud"
           onkeyup="performStudConversion()"
-        />
+        >
       </div>
     </div>
 
+    <!-- ============================================
+         Units Conversion Grid
+    ============================================= -->
     <div class="units-list">
+      <!-- Standard Measurements -->
       <div class="col-1">
         <!-- Millimeter -->
         <div class="unit-box">
@@ -29,10 +43,11 @@
             type="number"
             name="millimeter"
             id="millimeter"
-            placeholder="millimeter"
+            placeholder="Millimeter"
             onkeyup="performMillimeterConversion()"
-          />
+          >
         </div>
+        
         <!-- Centimeter -->
         <div class="unit-box">
           <label for="centimeter">Centimeter</label>
@@ -40,10 +55,11 @@
             type="number"
             name="centimeter"
             id="centimeter"
-            placeholder="centimeter"
+            placeholder="Centimeter"
             onkeyup="performCentimeterConversion()"
-          />
+          >
         </div>
+
         <!-- Meter -->
         <div class="unit-box">
           <label for="meter">Meter</label>
@@ -51,10 +67,11 @@
             type="number"
             name="meter"
             id="meter"
-            placeholder="meter"
+            placeholder="Meter"
             onkeyup="performMeterConversion()"
-          />
+          >
         </div>
+
         <!-- Inches -->
         <div class="unit-box">
           <label for="inches">Inches</label>
@@ -62,10 +79,11 @@
             type="number"
             name="inches"
             id="inches"
-            placeholder="inches"
+            placeholder="Inches"
             onkeyup="performInchesConversion()"
-          />
+          >
         </div>
+
         <!-- Feet -->
         <div class="unit-box">
           <label for="feet">Feet</label>
@@ -73,70 +91,79 @@
             type="number"
             name="feet"
             id="feet"
-            placeholder="feet"
+            placeholder="Feet"
             onkeyup="performFeetConversion()"
-          />
+          >
         </div>
       </div>
+
+      <!-- LEGO-Specific Measurements -->
       <div class="col-2">
-        <!-- Stacked bricks -->
+        <!-- Stacked Bricks -->
         <div class="unit-box">
-          <label for="stacked-bricks">Stacked bricks</label>
+          <label for="stacked-bricks">Stacked Bricks</label>
           <input
             type="number"
             name="stacked-bricks"
             id="stacked-bricks"
-            placeholder="stacked bricks"
+            placeholder="Stacked Bricks"
             onkeyup="performStackedBricksConversion()"
-          />
+          >
         </div>
-        <!-- Stacked plates -->
+
+        <!-- Stacked Plates -->
         <div class="unit-box">
-          <label for="stacked-plates">Stacked plates</label>
+          <label for="stacked-plates">Stacked Plates</label>
           <input
             type="number"
             name="stacked-plates"
             id="stacked-plates"
-            placeholder="stacked plates"
+            placeholder="Stacked Plates"
             onkeyup="performStackedPlatesConversion()"
-          />
+          >
         </div>
-        <!-- 16 x 16 blocks -->
+
+        <!-- 16 x 16 Blocks -->
         <div class="unit-box">
-          <label for="blocks16">16 x 16 blocks</label>
+          <label for="blocks16">16 x 16 Blocks</label>
           <input
             type="number"
             name="blocks16"
             id="blocks16"
-            placeholder="16 x 16 blocks"
+            placeholder="16 x 16 Blocks"
             onkeyup="performBlocks16Conversion()"
-          />
+          >
         </div>
-        <!-- 32 x 32 baseplates -->
+
+        <!-- 32 x 32 Baseplates -->
         <div class="unit-box">
-          <label for="baseplates32">32 x 32 baseplates</label>
+          <label for="baseplates32">32 x 32 Baseplates</label>
           <input
             type="number"
             name="baseplates32"
             id="baseplates32"
-            placeholder="32 x 32 baseplates"
+            placeholder="32 x 32 Baseplates"
             onkeyup="performBaseplates32Conversion()"
-          />
+          >
         </div>
-        <!-- 48 x 48 baseplates -->
+
+        <!-- 48 x 48 Baseplates -->
         <div class="unit-box">
-          <label for="baseplates48">48 x 48 baseplates</label>
+          <label for="baseplates48">48 x 48 Baseplates</label>
           <input
             type="number"
             name="baseplates48"
             id="baseplates48"
-            placeholder="48 x 48 baseplates"
+            placeholder="48 x 48 Baseplates"
             onkeyup="performBaseplates48Conversion()"
-          />
+          >
         </div>
       </div>
     </div>
 
-    <script src="./js/index.js"></script>
+    <!-- ============================================
+         JavaScript File
+    ============================================= -->
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
