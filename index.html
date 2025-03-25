@@ -26,7 +26,7 @@
           type="number"
           id="stud"
           name="stud"
-          onkeyup="performStudConversion()"
+          onkeyup="setStuds(this, studConversion)"
         >
       </div>
     </div>
@@ -45,7 +45,7 @@
             name="millimeter"
             id="millimeter"
             placeholder="Millimeter"
-            onkeyup="performMillimeterConversion()"
+            onkeyup="setStuds(this, millimeterConversion)"
           >
         </div>
         
@@ -57,7 +57,7 @@
             name="centimeter"
             id="centimeter"
             placeholder="Centimeter"
-            onkeyup="performCentimeterConversion()"
+            onkeyup="setStuds(this, centimeterConversion)"
           >
         </div>
 
@@ -69,7 +69,7 @@
             name="meter"
             id="meter"
             placeholder="Meter"
-            onkeyup="performMeterConversion()"
+            onkeyup="setStuds(this, meterConversion)"
           >
         </div>
 
@@ -81,7 +81,7 @@
             name="inches"
             id="inches"
             placeholder="Inches"
-            onkeyup="performInchesConversion()"
+            onkeyup="setStuds(this, inchesConversion)"
           >
         </div>
 
@@ -93,7 +93,7 @@
             name="feet"
             id="feet"
             placeholder="Feet"
-            onkeyup="performFeetConversion()"
+            onkeyup="setStuds(this, feetConversion)"
           >
         </div>
       </div>
@@ -108,7 +108,7 @@
             name="stacked-bricks"
             id="stacked-bricks"
             placeholder="Stacked Bricks"
-            onkeyup="performStackedBricksConversion()"
+            onkeyup="setStuds(this, stackedBricksConversion)"
           >
         </div>
 
@@ -120,7 +120,7 @@
             name="stacked-plates"
             id="stacked-plates"
             placeholder="Stacked Plates"
-            onkeyup="performStackedPlatesConversion()"
+            onkeyup="setStuds(this, stackedPlatesConversion)"
           >
         </div>
 
@@ -132,7 +132,7 @@
             name="blocks16"
             id="blocks16"
             placeholder="16 x 16 Blocks"
-            onkeyup="performBlocks16Conversion()"
+            onkeyup="setStuds(this, baseplates16Conversion)"
           >
         </div>
 
@@ -144,7 +144,7 @@
             name="baseplates32"
             id="baseplates32"
             placeholder="32 x 32 Baseplates"
-            onkeyup="performBaseplates32Conversion()"
+            onkeyup="setStuds(this, baseplates32Conversion)"
           >
         </div>
 
@@ -156,7 +156,7 @@
             name="baseplates48"
             id="baseplates48"
             placeholder="48 x 48 Baseplates"
-            onkeyup="performBaseplates48Conversion()"
+            onkeyup="setStuds(this, baseplates48Conversion)"
           >
         </div>
       </div>

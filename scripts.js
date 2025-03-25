@@ -14,24 +14,55 @@ let baseplates32 = document.getElementById("baseplates32");
 let baseplates48 = document.getElementById("baseplates48");
 
 // ==========================================================
+// Conversion Rates
+// ==========================================================
+let studConversion = 1;
+let millimeterConversion = 8;
+let centimeterConversion = 0.8;
+let meterConversion = 0.008;
+let inchesConversion = 0.315;
+let feetConversion = 0.026;
+let stackedBricksConversion = 0.883;
+let stackedPlatesConversion = 2.5;
+let baseplates16Conversion = 1 / 16;
+let baseplates32Conversion = 1 / 32;
+let baseplates48Conversion = 1 / 48;
+
+// ==========================================================
+// Function: performStudConversion()
+// ==========================================================
+function setStuds(e, conversion) {
+  stud.value = e.value / conversion;
+  performStudConversion();
+}
+
+// ==========================================================
+// Rounding Function
+// ==========================================================
+function roundTo(number, decimalPlaces) {
+  return +(+(Math.round((number + 'e+' + decimalPlaces)) + 'e-' + decimalPlaces)).toFixed(decimalPlaces);
+}
+
+// ==========================================================
 // Function: performStudConversion()
 // ==========================================================
 function performStudConversion() {
-  millimeter.value = Number(stud.value) * 8;
-  centimeter.value = Number(stud.value) * 0.8;
-  meter.value = Number(stud.value) * 0.008;
-  inches.value = Number(stud.value) * 0.315;
-  feet.value = Number(stud.value) * 0.026;
-  stackedBricks.value = Number(stud.value) * 0.833;
-  stackedPlates.value = Number(stud.value) * 2.499;
-  blocks16.value = Number(stud.value) * 0.063;
-  baseplates32.value = Number(stud.value) * 0.031;
-  baseplates48.value = Number(stud.value) * 0.021;
+  millimeter.value = roundTo(Number(stud.value) * millimeterConversion, 3);
+  centimeter.value =roundTo(Number(stud.value) * centimeterConversion, 3);
+  meter.value = roundTo(Number(stud.value) * meterConversion, 3);
+  inches.value = roundTo(Number(stud.value) * inchesConversion, 3);
+  feet.value = roundTo(Number(stud.value) * feetConversion, 3);
+  stackedBricks.value = roundTo(Number(stud.value) * stackedBricksConversion, 3);
+  stackedPlates.value = roundTo(Number(stud.value) * stackedPlatesConversion, 3);
+  blocks16.value = roundTo(Number(stud.value) * baseplates16Conversion, 3);
+  baseplates32.value = roundTo(Number(stud.value) * baseplates32Conversion, 3);
+  baseplates48.value = roundTo(Number(stud.value) * baseplates48Conversion, 3);
 }
 
 // ==========================================================
 // Function: performMillimeterConversion()
 // ==========================================================
+/*
 function performMillimeterConversion() {
   stud.value = Number(millimeter.value) * 0.125;
   centimeter.value = Number(millimeter.value) * 0.1;
@@ -140,3 +171,4 @@ function performStackedPlatesConversion() {
   baseplates32.value = Number(stackedPlates.value) * 0.013;
   baseplates48.value = Number(stackedPlates.value) * 0.000434;
 }
+*/
