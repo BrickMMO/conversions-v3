@@ -32,7 +32,7 @@ let baseplates48Conversion = 1 / 48;
 // Function: performStudConversion()
 // ==========================================================
 function setStuds(e, conversion) {
-  stud.value = e.value / conversion;
+  stud.value = (e.value / conversion).toFixed(3);
   performStudConversion();
 }
 
