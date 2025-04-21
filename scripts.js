@@ -28,6 +28,20 @@ let baseplates16Conversion = 1 / 16;
 let baseplates32Conversion = 1 / 32;
 let baseplates48Conversion = 1 / 48;
 
+let typingTimer;
+
+// ==========================================================
+// Function: performStudConversion()
+// ==========================================================
+function startKeyUp(e, conversion) {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(setStuds, 1000, e, conversion);
+}
+
+inputElement.addEventListener('keydown', () => {
+  clearTimeout(typingTimer);
+});
+
 // ==========================================================
 // Function: performStudConversion()
 // ==========================================================
