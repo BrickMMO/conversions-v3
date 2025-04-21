@@ -40,6 +40,7 @@ function setStuds(e, conversion) {
 // Rounding Function
 // ==========================================================
 function roundTo(number, decimalPlaces) {
+  return number.toFixed(3);
   return +(+(Math.round((number + 'e+' + decimalPlaces)) + 'e-' + decimalPlaces)).toFixed(decimalPlaces);
 }
 
